@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "O+f2RT+9VkPj9xGNGk9X1NHaw25T0DbsrGw5cAQtj14=",
+  "Source": "AggregationTask.API",
+  "BasePath": "_content/AggregationTask.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

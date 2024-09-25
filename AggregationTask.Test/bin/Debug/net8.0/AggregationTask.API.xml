@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AggregationTask.API</name>
+    </assembly>
+    <members>
+        <member name="M:AggregationTask.API.Controllers.AggregateController.GetAggregatedData(System.String,System.Nullable{System.DateTime},System.String,System.Nullable{System.DateTime},System.String,System.String,System.String)">
+            <summary>Get the aggregated data</summary>
+            <param name="city">The name of the city for which to retrieve weather data (e.g., "London").</param>
+            <param name="weatherEndDate">Optional. The end date up to which weather data will be fetched. If not provided, it fetches data for the next 24 hours.</param>
+            <param name="category">The category of news to retrieve (e.g., "technology", "sports").</param>
+            <param name="newsFrom">Optional. The start date from which to retrieve news articles. If not provided, it retrieves last weeks news.</param>
+            <param name="githubUser">The GitHub username to fetch repositories for.</param>
+            <param name="reposSortBy">Optional. The field by which to sort repositories. Allowed values: "name", "created", "updated".</param>
+            <param name="reposFilterBy">Optional. A keyword to filter repositories by name.</param>
+            <returns>News, weather, github repositories</returns>
+            <response code="200">Returns the requested data</response>
+        </member>
+        <member name="M:AggregationTask.API.Controllers.StatisticsController.GetApiStatistics">
+            <summary>Retrieve API request statistics.</summary>
+            <returns>Statistics about API request performance, including total requests, average response time, and counts of fast, average, and slow requests.</returns>
+            <response code="200">Returns the API statistics</response>
+        </member>
+        <member name="T:AggregationTask.API.Models.AggregatedDataResponse">
+            <summary>
+            Represents the aggregated response containing weather, news, and GitHub repository data.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.AggregatedDataResponse.Weather">
+            <summary>
+            The weather data for the specified city.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.AggregatedDataResponse.News">
+            <summary>
+            The news data for the specified category and date range.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.AggregatedDataResponse.Repositories">
+            <summary>
+            A list of repositories retrieved for the specified GitHub user.
+            </summary>
+        </member>
+        <member name="T:AggregationTask.API.Models.News.NewsData">
+            <summary>
+            Represents news data retrieved for a specified category or time range.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.News.NewsData.TotalResults">
+            <summary>
+            The total number of news articles found.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.News.NewsData.Articles">
+            <summary>
+            A list of news articles.
+            </summary>
+        </member>
+        <member name="T:AggregationTask.API.Models.News.NewsArticleDto">
+            <summary>
+            Represents a single news article.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.News.NewsArticleDto.SourceName">
+            <summary>
+            The name of the source that published the article (e.g., "BBC News").
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.News.NewsArticleDto.Author">
+            <summary>
+            The author of the article, if available.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.News.NewsArticleDto.Title">
+            <summary>
+            The title of the article.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.News.NewsArticleDto.Description">
+            <summary>
+            A brief description or summary of the article.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.News.NewsArticleDto.Url">
+            <summary>
+            The URL of the article.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.News.NewsArticleDto.UrlToImage">
+            <summary>
+            The URL of the image associated with the article, if available.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.News.NewsArticleDto.PublishedAt">
+            <summary>
+            The date and time the article was published.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.News.NewsArticleDto.Content">
+            <summary>
+            The main content of the article.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.Statistics.ApiStatisticsResponse.ApiName">
+            <summary>The name of the API (e.g., "News", "Weather").</summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.Statistics.ApiStatisticsResponse.TotalRequests">
+            <summary>The total number of requests made to the API.</summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.Statistics.ApiStatisticsResponse.AverageResponseTime">
+            <summary>The average response time for the API (in milliseconds).</summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.Statistics.ApiStatisticsResponse.FastRequests">
+            <summary>The number of fast requests (less than 100ms).</summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.Statistics.ApiStatisticsResponse.AverageRequests">
+            <summary>The number of average-speed requests (between 100-200ms).</summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.Statistics.ApiStatisticsResponse.SlowRequests">
+            <summary>The number of slow requests (greater than 200ms).</summary>
+        </member>
+        <member name="T:AggregationTask.API.Models.Weather.WeatherData">
+            <summary>
+            Represents weather data for a specified city.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.Weather.WeatherData.City">
+            <summary>
+            The name of the city for which the weather forecast is provided.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.Weather.WeatherData.Forecasts">
+            <summary>
+            A list of weather forecasts for the upcoming days.
+            </summary>
+        </member>
+        <member name="T:AggregationTask.API.Models.Weather.WeatherForecastDto">
+            <summary>
+            Represents a single weather forecast for a specific date and time.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.Weather.WeatherForecastDto.Dt">
+            <summary>
+            The timestamp of the forecast in UNIX format.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.Weather.WeatherForecastDto.Temp">
+            <summary>
+            The forecasted temperature in Celsius.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.Weather.WeatherForecastDto.FeelsLike">
+            <summary>
+            What the temperature feels like, in Celsius.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.Weather.WeatherForecastDto.Description">
+            <summary>
+            A brief description of the weather conditions (e.g., "clear sky").
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.Weather.WeatherForecastDto.WindSpeed">
+            <summary>
+            The wind speed in meters per second.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.Weather.WeatherForecastDto.Cloudiness">
+            <summary>
+            The percentage of cloud cover.
+            </summary>
+        </member>
+        <member name="P:AggregationTask.API.Models.Weather.WeatherForecastDto.Humidity">
+            <summary>
+            The humidity percentage.
+            </summary>
+        </member>
+    </members>
+</doc>

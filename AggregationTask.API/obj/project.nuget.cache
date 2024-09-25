@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "IXjclCsvEmq7hyf9/6AD8lK0/0DsHHVaDiRRugz1pYAT4jS89Zmxxf6mMxYPXFxPE0P2O+XuIP4UwfOaDOUh2w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sniko\\Desktop\\AA Task\\Project\\AggregationTask\\AggregationTask.API\\AggregationTask.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sniko\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Sniko\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Sniko\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
+    "C:\\Users\\Sniko\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Sniko\\.nuget\\packages\\servicestack.common\\8.4.0\\servicestack.common.8.4.0.nupkg.sha512",
+    "C:\\Users\\Sniko\\.nuget\\packages\\servicestack.interfaces\\8.4.0\\servicestack.interfaces.8.4.0.nupkg.sha512",
+    "C:\\Users\\Sniko\\.nuget\\packages\\servicestack.text\\8.4.0\\servicestack.text.8.4.0.nupkg.sha512",
+    "C:\\Users\\Sniko\\.nuget\\packages\\swashbuckle.aspnetcore\\6.7.3\\swashbuckle.aspnetcore.6.7.3.nupkg.sha512",
+    "C:\\Users\\Sniko\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.7.3\\swashbuckle.aspnetcore.swagger.6.7.3.nupkg.sha512",
+    "C:\\Users\\Sniko\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.7.3\\swashbuckle.aspnetcore.swaggergen.6.7.3.nupkg.sha512",
+    "C:\\Users\\Sniko\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.7.3\\swashbuckle.aspnetcore.swaggerui.6.7.3.nupkg.sha512",
+    "C:\\Users\\Sniko\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "C:\\Users\\Sniko\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
+  ],
+  "logs": []
+}
